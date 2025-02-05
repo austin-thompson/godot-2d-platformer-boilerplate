@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkwqji0usuo8f"]
+
+[ext_resource type="Script" path="res://scenes/options_menu.gd" id="1_7ulhu"]
+
+[node name="OptionsMenu" type="Node2D"]
+script = ExtResource("1_7ulhu")
+
+[node name="MainMenuBtn" type="Button" parent="."]
+offset_left = 529.0
+offset_top = 464.0
+offset_right = 625.0
+offset_bottom = 496.0
+text = "Main Menu
+"
+
+[connection signal="pressed" from="MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]
